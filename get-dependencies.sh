@@ -10,7 +10,7 @@ pacman -Syu --noconfirm pipewire-audio pipewire-jack
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano ffmpeg-mini
+get-debloated-pkgs --add-common --prefer-nano
 
 # According to upstream release notes gtk2 is no longer needed
 # also the AUR packager forgot to include cmake in the dependencies
