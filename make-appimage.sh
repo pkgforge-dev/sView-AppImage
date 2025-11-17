@@ -13,7 +13,7 @@ export DESKTOP=https://raw.githubusercontent.com/gkv311/sview/refs/heads/master/
 export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/sView /usr/share/fonts
+quick-sharun /usr/bin/sView /usr/share/fonts/TTF
 
 # Additional changes can be done in between here
 
