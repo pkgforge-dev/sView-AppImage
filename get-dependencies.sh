@@ -14,7 +14,7 @@ get-debloated-pkgs --add-common --prefer-nano ffmpeg-mini
 
 # According to upstream release notes gtk2 is no longer needed
 # also the AUR packager forgot to include cmake in the dependencies
-export PRE_BUILD_CMDS="sed -i -e 's|gtk2|cmake|g' ./PKGBUILD" 
-make-aur-package sview-git
+make-aur-package zenity-gtk3
+PRE_BUILD_CMDS="sed -i -e 's|gtk2|cmake|g' ./PKGBUILD" make-aur-package sview-git
 
 # If the application needs to be manually built that has to be done down here
