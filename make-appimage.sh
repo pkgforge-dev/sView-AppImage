@@ -10,7 +10,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=https://raw.githubusercontent.com/gkv311/sview/refs/heads/master/share/icons/hicolor/256x256/apps/sview.png
 export DESKTOP=https://raw.githubusercontent.com/gkv311/sview/refs/heads/master/share/applications/sViewMP.desktop
 export DEPLOY_PIPEWIRE=1
-export DEPLOY_OPENGL=1
+export USE_HOST_DRIVERS_EXPERIMENTAL=1
 
 # Deploy dependencies
 quick-sharun \
