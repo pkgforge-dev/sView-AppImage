@@ -32,7 +32,10 @@ git fetch --tags origin
 TAG=$(git tag --sort=-v:refname | grep -vi 'preview\|alpha\|beta' | head -1)
 git checkout "$TAG"
 
-cmake -S ./ -B build -D CMAKE_INSTALL_PREFIX=/usr -D USE_OPENVR=OFF
+cmake -S ./ -B build \
+	-D CMAKE_BUILD_TYPE=Release  \
+	-D CMAKE_INSTALL_PREFIX=/usr \
+	-D USE_OPENVR=OFF
 cmake --build build
 cmake --install build
 
